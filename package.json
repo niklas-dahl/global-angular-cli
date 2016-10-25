@@ -1,0 +1,22 @@
+{
+  "name": "global-angular-cli",
+  "version": "1.0.0",
+  "description": "A small helper to avoid installaling the awesome but huge angular-cli globally",
+  "main": "index.js",
+  "bin": {
+    "ngg": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niklas-dahl/global-angular-cli.git"
+  },
+  "author": "niklas-dahl",
+  "license": "ISC",
+  "dependencies": {
+    "exit": "^0.1.2",
+    "resolve": "^1.1.7"
+  }
+}
