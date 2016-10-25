@@ -1,9 +1,11 @@
 # Global angular-cli
 
+[![npm][npm-badge]][npm-badge-url]
+
 A small helper to avoid installing the awesome but huge angular-cli globally.
 
-angular-cli: `~210 MB`
-global-angular-cli: `~146 KB`
+angular-cli: `~210MB`
+global-angular-cli: `~146KB`
 
 This project addresses the problem described in https://github.com/angular/angular-cli/issues/1263.
 This is pretty much a proof of concept until the angular-cli team creates a real solution.
@@ -39,5 +41,7 @@ ngg build -prod
   * `e2e/app.po.ts`: `export class ProjectNamePage`
   * `e2e/e2e-spec.ts`: import, describe
   * `src/index.html`: `<title>project-name</title>`
-  * `src/app/app.component.spec.ts`: `describe('App: project-name', () => {`
-  
+  * `src/app/app.component.spec.ts`: `describe('App: project-name', () => { ..`
+
+[npm-badge]: https://img.shields.io/npm/v/global-angular-cli.svg
+[npm-badge-url]: https://www.npmjs.com/package/global-angular-cli
