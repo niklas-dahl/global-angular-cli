@@ -3,7 +3,7 @@
 [![npm][npm-badge]][npm-badge-url]
 [![Build Status](https://travis-ci.org/niklas-dahl/global-angular-cli.svg?branch=master)](https://travis-ci.org/niklas-dahl/global-angular-cli)
 
-A small helper to avoid installing the awesome but huge angular-cli globally.
+A small helper to avoid installing the awesome but huge [angular-cli](https://github.com/angular/angular-cli) globally.
 
 angular-cli: `~210MB`
 global-angular-cli: `~146KB`
