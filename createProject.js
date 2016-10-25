@@ -40,7 +40,7 @@ function createProject(projectName) {
     'e2e/app.e2e-spec.ts',
     'e2e/app.po.ts',
     'e2e/tsconfig.json',
-    '.gitignore',
+    'gitignore',
     'karma.conf.js',
     'package.json',
     'protractor.conf.js',
@@ -61,8 +61,14 @@ function createProject(projectName) {
 
   // copy files
   files.forEach(filePath => {
+    let outPath = filePath;
+    // add the dot to gitignore
+    if(filePath === 'gitignore') {
+      outPath = '.' + filePath;
+    }
+
     console.log('Copying', filePath);
-    copyFile(path.join(__dirname, 'templateProject', filePath), path.join(projectRootDir, filePath), (err) => {
+    copyFile(path.join(__dirname, 'templateProject', filePath), path.join(projectRootDir, outPath), (err) => {
       if (err) console.log(err);
     });
   });
