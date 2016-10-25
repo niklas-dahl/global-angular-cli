@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - "4"
+os:
+  - linux
+  
+before_script:
+  - npm link
+
+script:
+  - ngg new testProj
+  - cd testProj
+  - ngg g c myComp
+  - ngg build -prod
