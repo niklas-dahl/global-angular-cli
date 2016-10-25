@@ -10,9 +10,7 @@ before_script:
 
 script:
   - ngg new testProj
-
   - cd testProj
-  - npm i
   
-  - ngg g c myComp
-  - ngg build -prod
+  - ngg generate component myComp
+  - ngg g pipe my-pipe
