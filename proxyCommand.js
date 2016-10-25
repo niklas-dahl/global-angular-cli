@@ -13,6 +13,7 @@ function proxyCommand() {
       // path to this script file (which is likely a globally installed
       // npm package). Most common cause for hitting this is `ng new`
       console.log('ERR', 'Local angular-cli could not be found. Make sure to install your depdencies first');
+      exit(1);
     } else {
       // No error implies a projectLocalCli, which will load whatever
       // version of ng-cli you have installed in a local package.json

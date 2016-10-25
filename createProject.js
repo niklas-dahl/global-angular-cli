@@ -69,7 +69,10 @@ function createProject(projectName) {
 
     console.log('Copying', filePath);
     copyFile(path.join(__dirname, 'templateProject', filePath), path.join(projectRootDir, outPath), (err) => {
-      if (err) console.log(err);
+      if (err) {
+        console.log('ERR', 'Copying', filePath);
+        throw err;  
+      }
     });
   });
 }
