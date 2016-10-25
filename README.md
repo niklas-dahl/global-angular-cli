@@ -1,6 +1,7 @@
 # Global angular-cli
 
 [![npm][npm-badge]][npm-badge-url]
+[![Build Status](https://travis-ci.org/niklas-dahl/global-angular-cli.svg?branch=master)](https://travis-ci.org/niklas-dahl/global-angular-cli)
 
 A small helper to avoid installing the awesome but huge angular-cli globally.
 
