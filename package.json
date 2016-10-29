@@ -4,7 +4,7 @@
   "description": "A small helper to avoid installaling the awesome but huge angular-cli globally",
   "main": "index.js",
   "bin": {
-    "ngg": "./index.js"
+    "ngg": "./src/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
