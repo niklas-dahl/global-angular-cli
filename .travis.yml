@@ -5,7 +5,8 @@ node_js:
   - "4"
 os:
   - linux
-  
+  - osx
+
 before_script:
   - npm i -g npm
   - npm config set spin false
