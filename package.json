@@ -1,6 +1,6 @@
 {
   "name": "global-angular-cli",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A small helper to avoid installaling the awesome but huge angular-cli globally",
   "main": "index.js",
   "bin": {
