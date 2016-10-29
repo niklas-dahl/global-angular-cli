@@ -1,5 +1,7 @@
 'use strict';
 
+// pretty much taken from https://github.com/angular/angular-cli/blob/master/packages/angular-cli/bin/ng
+
 const resolve = require('resolve');
 const exit = require('exit');
 
