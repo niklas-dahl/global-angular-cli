@@ -1,3 +1,5 @@
+'use strict';
+
 let exec = require('child_process').exec;
 
 function installLocally() {
