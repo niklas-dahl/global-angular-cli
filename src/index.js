@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 'use strict';
 
-let helpers = require('./helpers');
-
-let proxyCommand = require('./proxyCommand').proxyCommand;
-let createProject = require('./createProject').createProject;
+const proxyCommand = require('./proxyCommand').proxyCommand;
+const installLocally = require('./installLocally').installLocally;
+const exit = require('exit');
 
 let cliArgs = process.argv.slice(2);
 
@@ -17,18 +16,27 @@ if (cliArgs.length === 0) {
   return;
 }
 
-// check for new command
-if (cliArgs[0] == 'new') {
+let command = cliArgs[0]; 
+
+if (command === 'new') {
 
   let projectName = cliArgs[1];
   if (!projectName) {
     console.log('ERR', 'Please provide name for your project');
     console.log('ERR', 'ngg new <projectName>');
   } else {
-    createProject(projectName);
+    installLocally().then(() => {
+      return proxyCommand(['init', '--skipNpm']);
+    }).then(() => {
+      console.log('Looks good');
+    }).catch(err => {
+      console.log(err);
+    });
   }
 
 } else {
   // proxy command to local angular-cli
-  proxyCommand();
+  proxyCommand(cliArgs).catch(err => {
+    console.log(err);
+  });
 }
