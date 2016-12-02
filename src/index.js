@@ -31,6 +31,7 @@ if (command === 'new') {
   } else {
     // create Project Folder
     fs.mkdirSync(projectName);
+    console.log('Created ' + projectName + '/');
     // change current working directory to project folder
     process.chdir(projectName);
     // install and init
@@ -55,7 +56,7 @@ function installAndInit() {
   return installLocally()
   
     // proxy the init command to the freshly installed angular-cli
-    .then(_ => proxyCommand(['init', '--skipNpm']))
+    .then(_ => proxyCommand(['init']))
 
     // success
     .then(() => {
