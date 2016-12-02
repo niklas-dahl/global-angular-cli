@@ -24,6 +24,8 @@ function proxyCommand(args) {
           cli = cli['default'];
         }
 
+        console.log('The local angular-cli now takes over');
+
         return cli({
           cliArgs: args,
           inputStream: process.stdin,
