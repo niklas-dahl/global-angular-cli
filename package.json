@@ -2,7 +2,7 @@
   "name": "global-angular-cli",
   "version": "1.4.0",
   "description": "A small helper to avoid installaling the awesome but huge angular-cli globally",
-  "main": "index.js",
+  "main": ".src/index.js",
   "bin": {
     "ngg": "./src/index.js"
   },
