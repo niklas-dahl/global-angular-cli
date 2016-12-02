@@ -15,6 +15,9 @@ before_script:
   - npm link
 
 script:
+  - pwd
+  - cd ..
+  - pwd
   - ngg new testProj
   
   - cd testProj
