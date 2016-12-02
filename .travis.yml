@@ -18,7 +18,6 @@ script:
   - ngg new testProj
   
   - cd testProj
-  - npm i --no-optional
   
   - ngg generate component myComp
   - ngg g pipe my-pipe
