@@ -1,3 +1,7 @@
+# :exclamation: Deprecated.
+
+The angular-cli team decreased the install time drastically and the approch taken here would not work with future versions of the cli.
+
 # Global angular-cli
 
 [![npm][npm-badge]][npm-badge-url]
